@@ -1,11 +1,15 @@
 import { Text, View} from 'react-native'
 
-function ExpensesSumamry({expenses}) {
+function ExpensesSumamry({ expenses, periodName }) {
+  const expensesSum = expenses.reduce((sum, expense) => {
+    return sum + expense.amount
+  }, 0);
+
   return (
     <View>
       <View>
-        <Text>Last 7 Days</Text>
-        <Text>$177</Text>
+        <Text>{periodName}</Text>
+        <Text>${expensesSum.toFixed(2)}</Text>
       </View>
     </View>
   )
