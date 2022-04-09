@@ -29,6 +29,30 @@ const DUMMY_EXPENSES = [
     description: 'eggs',
     amount: 5.99,
     date: new Date('2022-04-05')
+  },
+  {
+    id: 'e5',
+    description: 'Elden Ring',
+    amount: 59.99,
+    date: new Date('2021-10-20')
+  },
+  {
+    id: 'e6',
+    description: 'Xbox Series X',
+    amount: 550.99,
+    date: new Date('2021-12-25')
+  },
+  {
+    id: 'e7',
+    description: 'Cat stuff',
+    amount: 19.99,
+    date: new Date('2022-03-12')
+  },
+  {
+    id: 'e8',
+    description: 'eggs',
+    amount: 5.99,
+    date: new Date('2022-04-05')
   }
 ];
 
@@ -48,7 +72,9 @@ export default ExpensesOutput;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 24,
+    paddingHorizontal: 24,
+    paddingTop: 24,
+    paddingBottom: 0,
     backgroundColor: 'white'
   }
 })
